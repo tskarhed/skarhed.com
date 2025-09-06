@@ -7,6 +7,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -15,6 +16,7 @@ body {
 
 .container {
     text-align: center;
+    padding: 1rem;
 }
 
 .main-title {
@@ -30,4 +32,31 @@ body {
     color: #333333;
     font-weight: normal;
     font-family: 'Times New Roman', serif;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .pronunciation {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .pronunciation {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 0.5rem;
+    }
 } 
