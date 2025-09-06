@@ -130,6 +130,7 @@ function changePageStyle() {
     
     mainTitle.style.fontFamily = randomFont;
     body.style.background = randomGradient;
+    body.style.backgroundAttachment = 'fixed';
     
     // Calculate background brightness and adjust text colors accordingly
     const brightness = getGradientBrightness(randomGradient);
@@ -152,6 +153,7 @@ function initPage() {
         // Use the stored styles if we're in the same session
         document.getElementById('mainTitle').style.fontFamily = storedFont;
         document.body.style.background = storedGradient;
+        document.body.style.backgroundAttachment = 'fixed';
         adjustTextColors(parseFloat(storedBrightness));
     } else {
         // Change to random styles if it's a new session
